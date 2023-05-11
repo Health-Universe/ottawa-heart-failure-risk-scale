@@ -6,17 +6,17 @@ def calculate_ohfrs(data):
 
 st.title('Ottawa Heart Failure Risk Scale Calculator')
 
-st.sidebar.header('Patient Information')
-stroke_history = st.sidebar.checkbox('History of stroke or TIA')
-intubation_history = st.sidebar.checkbox('History of intubation for respiratory distress')
-heart_rate = st.sidebar.checkbox('Heart rate > 110 bpm at disposition')
-systolic_bp = st.sidebar.checkbox('Systolic blood pressure < 115 mmHg at disposition')
-saO2 = st.sidebar.checkbox('SaO2 < 90% on room air at any point during visit')
-creatinine = st.sidebar.checkbox('Creatinine > 90 μmol/L (1.02 mg/dL) at disposition')
-age = st.sidebar.checkbox('Age > 65')
-home_oxygen = st.sidebar.checkbox('Currently on home oxygen therapy')
-ambulance_arrival = st.sidebar.checkbox('Arrival by ambulance')
-no_ace_inhibitor = st.sidebar.checkbox('No ACE inhibitor or ARB at presentation')
+st.header('Patient Information')
+stroke_history = st.checkbox('History of stroke or TIA')
+intubation_history = st.checkbox('History of intubation for respiratory distress')
+heart_rate = st.checkbox('Heart rate > 110 bpm at disposition')
+systolic_bp = st.checkbox('Systolic blood pressure < 115 mmHg at disposition')
+saO2 = st.checkbox('SaO2 < 90% on room air at any point during visit')
+creatinine = st.checkbox('Creatinine > 90 μmol/L (1.02 mg/dL) at disposition')
+age = st.checkbox('Age > 65')
+home_oxygen = st.checkbox('Currently on home oxygen therapy')
+ambulance_arrival = st.checkbox('Arrival by ambulance')
+no_ace_inhibitor = st.checkbox('No ACE inhibitor or ARB at presentation')
 
 data = {
     'stroke_history': stroke_history,
